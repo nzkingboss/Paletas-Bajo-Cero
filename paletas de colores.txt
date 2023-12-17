@@ -1,0 +1,5 @@
+#bf264a rojo 
+#0db0b4 azul
+#f1eee1 gris
+#46351e marron
+#f98bb7 rosa
