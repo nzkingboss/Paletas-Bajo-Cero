@@ -148,37 +148,96 @@ body {
   bottom: 0;
   left: 700px;
   z-index: 1;
+  animation: moveLeftRight 5s linear infinite alternate;
+}
+
+@keyframes moveLeftRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50px); 
+  }
 }
 
 #hero p {
   padding-bottom: 15px;
   font-size: 20px;
   color: #ffffff;
+  position: relative;
+  top: 70px;
 }
-#hero h4 {
-  padding-bottom: 15px;
-  font-size: 40px;
-  color: #ffffff;
-}
+
+#hero i {
+    padding-bottom: 15px;
+    font-size: 20px;  
+    color: #fbfd70;
+    position: relative;
+    top: 70px;
+  }
+
 #hero h2{
   font-size: 70px;
   color:#f98bb7;
+  position: relative;
+  top: 70px;
 }
 #hero h1 {
   color: #00c43b;
   font-size: 70px;
+  position: relative;
+  top: 70px;
 
 }
 #hero button {
+  position: relative; 
   background-color:#0db0b4;
-  width: 260px;
-  height: 60px;
-  border: 0;
-  cursor: pointer;
-  font-size: 20px;
+  width: 280px;
+  height: 80px;
+  border-radius: 10px;
+  cursor: pointer;  
+  font-size: 25px;
   font-weight: 700;
-  color: #000000;
+  color:#ffffff;
   padding: 14px 65px 14px 65px;
+  margin-top: 60px;  
+}
+
+#hero button span {
+  position: absolute;
+  display: block;
+}
+              
+#hero button:hover {
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0px 3px 5px rgba(0,0,0,.4);  
+}
+
+#hero button:hover span {
+  animation-play-state: paused;
+}
+
+#hero button {
+  position: relative;  
+  overflow: hidden; 
+}
+
+#hero button:after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: linear-gradient(90deg, #0ff 15%, #f0f 40%, #ff0 60%); 
+  z-index: -1;  
+  animation: snakeBorder 2s linear infinite;
+}
+
+@keyframes snakeBorder {
+  0% {
+    transform: translateX(-100%); 
+  }
+  100% {
+    transform: translateX(100%);
+  } 
 }
 
 /* feature section styles */
@@ -316,20 +375,27 @@ body {
 #banners {
   margin: 0 60px;
 }
+
 #banners h2,
-h4,
-span {
+#banners h4,
+#banners span {
   color: rgb(248, 248, 248);
 }
-#banners .big-banners {
+
+#banners .big-banners,
+#banners .small-banners {
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 30px;
 }
-#banners .big-banners div {
-  min-width: 580px;
-  margin: 15px;
+
+#banners .big-banners div,
+#banners .small-banners div {
+  min-width: 300px; 
+  flex: 1; 
+  max-width: 600px; 
   height: 300px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -337,8 +403,19 @@ span {
   padding: 25px;
   background-size: cover;
   backdrop-filter: blur(8%);
+  border: 0px solid transparent;
+  border-radius: 10px; 
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-#banners .big-banners button {
+
+#banners .big-banners div:hover,
+#banners .small-banners div:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-15px); 
+}
+
+#banners .big-banners button,
+#banners .small-banners button {
   margin-top: 20px;
   padding: 12px 20px;
   font-size: 16px;
@@ -347,49 +424,44 @@ span {
   color: rgb(248, 248, 248);
   border: 1px solid rgb(248, 248, 248);
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease, border 0.3s ease;
 }
-#banners .big-banners div:hover button {
+
+#banners .big-banners div:hover button,
+#banners .small-banners div:hover button {
   background-color: #088178;
   border: 1px solid #088178;
 }
+
+/*Asigna estilos específicos a cada tipo de banner */
 #banners .big-banners-1 {
   background-image: url(images/banner/b17.jpg);
 }
+
 #banners .big-banners-2 {
   background-image: url(images/banner/b10.jpg);
 }
+
 #banners .small-banners-1 {
   background-image: url(images/banner/b7.jpg);
 }
+
 #banners .small-banners-2 {
   background-image: url(images/banner/b4.jpg);
 }
+
 #banners .small-banners-3 {
   background-image: url(images/banner/b18.jpg);
 }
-#banners .small-banners {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#banners .small-banners div {
-  min-width: 370px;
-  height: 200px;
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 25px;
-  background-size: cover;
-}
+
 #banners .small-banners h2 {
   font-size: 25px;
 }
+
 #banners .small-banners h5 {
   color: #771818;
 }
+
 
 /* footer section styles */
 

@@ -1,1 +1,10 @@
-Sulicitud para sabores nuevos
+Redireccionar menu Sucersales, Historia, Contactos
+Navegacion por seciones 
+Responsive para todos los dispositivos 
+
+
+
+
+
+Mandar solicitus en busca de vender el proyecto por un valor de 500 dolares
+Intentar hacer un hacercamiento para mantenimiento de la misma pagina
