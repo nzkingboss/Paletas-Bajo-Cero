@@ -9,38 +9,6 @@
   font-family: "League Spartan", sans-serif;
 }
 
-h1 {
-  font-size: 50px;
-  text-align: center;
-  line-height: 64px;
-  color: #222;
-}
-h2 {
-  font-size: 46px;
-  line-height: 54px;
-  color: #222;
-}
-h4 {
-  font-size: 20px;
-  color: #222;
-}
-h6 {
-  font-weight: 700;
-  font-size: 12px;
-}
-p {
-  font-size: 16px;
-  text-align: center;
-  color: #465b52;
-  margin: 15px 0 20px 0;
-}
-.section-p1 {
-  padding: 40px 0;
-}
-.section-m1 {
-  margin: 40px 0;
-}
-
 /* header styles */
 
 #header {
@@ -108,7 +76,7 @@ p {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.8)), url(images/fondo.jpg);
   backdrop-filter: blur(15px);
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-size: cover;
   background-position: top -80% right 0;
   display: flex;
@@ -120,16 +88,17 @@ p {
 
 #hero::after {
   content: "";
-  /* background-image: url('images/blog/b3.png'); */
+  background-image: url('images/blog/b3.png');
   background-repeat: no-repeat;
   position:absolute;
-  top: 155px;
-  right: 180px;
+  top: 5px;
+  right: 80px;
   bottom: 0;
-  left: 700px;
+  left: 650px;
   z-index: 1;
   animation: moveLeftRight 5s linear infinite alternate;
 }
+
 
 @keyframes moveLeftRight {
   from {
@@ -139,6 +108,8 @@ p {
     transform: translateX(50px); 
   }
 }
+
+
 
 #hero p {
   padding-bottom: 15px;
@@ -165,8 +136,14 @@ p {
 /* Sucursales */
 
 .ag-format-container {
-  width: 1142px;
+  width: 100%;
+  height: 130vh;
   margin: 0 auto;
+  padding-top: 40px;
+  background-image: url('images/cover/5543.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .ag-courses_box {
@@ -288,6 +265,7 @@ p {
   }
 
 }
+
 @media only screen and (max-width: 639px) {
   .ag-courses_item {
     -ms-flex-preferred-size: 100%;
@@ -307,17 +285,28 @@ p {
   }
 }
 
+
 /* footer section styles */
 
 #footer{
   display: flex;
-  align-items:flex-start;
+  flex-direction: column;
+  align-items:center;
   justify-content: center;
-  padding: 35px;
+  margin: 5px 0;
+  padding: 15px;
+  font-size: 20px;
+  line-height: 1.5;
   background-color: #088178;
 }
 
 #footer p, #footer a{
   color: white;
   text-decoration: none;
+} 
+
+p i {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
+

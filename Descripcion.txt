@@ -1,1 +1,1 @@
-Propuesta Web para la marca "Paletas Bajo Cero". Maquetado en HTLM y CSS, en busca de una aportunidad de trabajo. Diseño totalmente responsivo para todos los dispositivos
+Propuesta Web para la marca "Paletas Bajo Cero". Maquetado en HTLM, CSS y JS, en busca de una aportunidad de trabajo. Diseño totalmente responsivo para todos los dispositivos
