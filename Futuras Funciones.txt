@@ -1,9 +1,8 @@
-Letras rosas - seccion historia
-boton o api de ubicaciones - seccion sucursales
-Redireccionar menu  
+Boton o api de ubicaciones - seccion sucursales 
+
 Responsive para todos los dispositivos 
-Flooter Index
-boton buscar una sucursar - href
+Flooter Index y menu
+
 
 
 

@@ -16,19 +16,18 @@
     
     <button onclick="topFunction()" id="goToTopBtn" title="Ir arriba">↑</button>
 
-
     <!--Sección del encabezado-->
 
     <header>
       <div id="header">
         <div class="header-logo">
-          <a href="indext.html"><img src="images/logo-sin-fondo.png" width="100" height="90" /></a>
+          <a href="index.html"><img src="images/logo-sin-fondo.png" width="100" height="90" /></a>
         </div>
         <div class="header-list">
           <nav class="header-list-nav">
             <ul>
               <li><a class="active" href="index.html">Inicio</a></li>
-              <li><a href="shop.html">Menu</a></li>
+              <li><a href="menu.html">Menu</a></li>
               <li><a href="sucursales.html">Sucursales</a></li>
               <li><a href="historia.html">Historia</a></li>
             </ul>
@@ -37,7 +36,7 @@
       </div>
     </header>
 
-    <!--Sección principal-->
+       <!--Sección principal-->
 
     <main>
       <section id="hero">
@@ -45,11 +44,11 @@
         <h2>Paletas Bajo Cero</h2>
         <h1>Explora nuestros productos</h1>
         <p>Aprovecha nuestras ofertas y sabores de temporada!</p>
-        <button>Resfrescate ahora!</button>
-
+        <button onclick="redireccionar()">Refrescate ahora!</button>
+        
       </section> 
 
-    <!--Sección de los beneficios-->
+      <!--Sección de los beneficios-->
 
       <section id="features" class="section-p1">
         <div class="f-box">
@@ -58,11 +57,11 @@
         </div>
         <div class="f-box">
           <img src="images/limon.jpg" width="50" height="150"/>
-          <h6>Cremosos</h6>
+          <h6>Textura Cremosos</h6>
         </div>
         <div class="f-box">
           <img src="images/piña.jpg" width="50" height="150"/>
-          <h6>Refréscates</h6>
+          <h6>Muy Refréscates</h6>
         </div>
         <div class="f-box">
           <img src="images/kiwi.jpg" width="50" height="150"/>
@@ -75,235 +74,6 @@
         <div class="f-box">
           <img src="images/cereza.jpg"/>
           <h6>Amplia Variedad</h6>
-        </div>
-      </section>
-
-      <section class="product-section" class="section-p1">
-        <h1>Paletas Rellenas</h1>
-        <p>Refresca tu paladar</p>
-        <div class="pro-collection">
-          
-          <div class="product-cart">
-            <img src="images/chocolate y nutella.jpg" alt="product image" />
-            <span>Rellenas de Nutella</span>
-            <h4>Chocolate</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $200</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/coco con nutella y nueces.jpg" alt="product image" />
-            <span>Rellenas de Nutella</span>
-            <h4>Coco con nueces</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $200</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/Cherry Love rellena.jpg" alt="product image" />
-            <span>Rellenas con Dulce de Cereza</span>
-            <h4>Cherry Love</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $200</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/coco rellena con  nutella.jpg" alt="product image" />
-            <span>Rellenas con nutella</span>
-            <h4>Coco Tropical</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $200</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/nutella con crema de coco.jpg" alt="product image" />
-            <span>Rellena con crema de coco</span>
-            <h4>Nutella Cremosa</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $200</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/Ron Pasas.jpg" alt="product image" />
-            <span>Rellana con dulce de leche</span>
-            <h4>Ron Pasas</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $200</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/fresa con chocolate.jpg" alt="product image" />
-            <span>Rellena de chocolate</span>
-            <h4>Fresa Natural</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $200</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/Dulce de Leche rellena Dulce de Leche.jpg" alt="product image" />
-            <span>Rellena de dulce de leche</span>
-            <h4>Leche Con Nueces</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $200</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-        </div>
-      </section>
-
-      <section id="off-banner" class="section-m1">
-        <h4>Recuerda que puedes personalizarlas a tu gusto</h4>
-        <h2>Con o Sin Zambullido!</h2>
-        <button class="normal">Busca tu surcusal mas cercana</button>
-      </section>
-
-      <section class="product-section" class="section-p1">
-        <h1>Paletas No Rellenas</h1>
-        <p>Refresca tu paladar</p>
-        <div class="pro-collection">
-          <div class="product-cart">
-            <img src="images/Chicle y Marshmallow.jpg" alt="product image" />
-            <h4>Chicle y Marshmallow</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i> 
-            </div>
-            <h4 class="price">RD $170</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/Aguacate.jpg" alt="product image" />
-            <h4>Aguacate</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $170</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/Fruit Punch.jpg" alt="product image" />
-            <h4>Coctel de Frutas</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $170</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/Yogurt con Frutos del Bosque.jpg" alt="product image" />
-            <h4>Frutos del Bosque</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $170</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/yogurt con frutas.jpg" alt="product image" />
-            <h4>Yogurt Con Frutas</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $170</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/zambullido de pistacho.jpg" alt="product image" />
-            <h4>Zambullido de Pistacho</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $170</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/Paleta de Avellana Pirulín.jpg" alt="product image" />
-            <h4>Avellana Pirulín</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $170</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/piña con chispas.jpg" alt="product image" />
-            <h4>Piña con Chispas</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">RD $170</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
         </div>
       </section>
 
