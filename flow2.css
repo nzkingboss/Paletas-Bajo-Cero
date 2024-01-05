@@ -37,10 +37,11 @@
   list-style-type: none;
   padding: 0 20px;
   position: relative;
+  margin-left: 36px;
 }
 .header-list-nav ul a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: #1a1a1a;
   transition: 0.3s ease;
@@ -54,6 +55,12 @@
   color: #1a1a1a;
   padding-left: 20px;
   transition: 0.3s ease;
+}
+.header-list img {
+  display: none;
+} 
+.header-list #btn_menu {
+  display: none;
 }
 .header-list-icon a:hover,
 .header-list-nav ul a.active {
@@ -112,21 +119,21 @@
 
 #hero p {
   padding-bottom: 15px;
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #ffffff;
   position: relative;
   top: 70px;
 }
 
 #hero h2{
-  font-size: 70px;
+  font-size: 3.5rem; 
   color:#f98bb7;
   position: relative;
   top: 70px;
 }
 #hero h1 {
   color: #00c43b;
-  font-size: 70px;
+  font-size: 5.5rem;
   position: relative;
   top: 70px;
 
@@ -138,14 +145,17 @@
   width: 100%;
   height: 130vh;
   margin: 0 auto;
+  position: relative;
+  padding: 40px;
   padding-top: 40px;
   background-image: url('images/cover/5543.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .ag-courses_box {
+  flex-wrap: wrap;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,26 +164,23 @@
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
   padding: 50px 0;
 }
 .ag-courses_item {
   -ms-flex-preferred-size: calc(33.33333% - 30px);
   flex-basis: calc(33.33333% - 30px);
-
+  width: 30%; 
   margin: 0 15px 30px;
-
   overflow: hidden;
-
   border-radius: 28px;
 }
+
 .ag-courses-item_link {
   display: block;
   padding: 30px 20px;
   background-color: #121212;
-
+  /*background-color: #313131;*/
   overflow: hidden;
-
   position: relative;
 }
 .ag-courses-item_link:hover,
@@ -243,8 +250,6 @@
   background-color: #4c49ea;
 }
 
-
-
 @media only screen and (max-width: 979px) {
   .ag-courses_item {
     -ms-flex-preferred-size: calc(50% - 30px);
@@ -304,5 +309,163 @@
 p i {
   font-size: 20px;
   color: rgb(0, 0, 0);
+}
+
+
+
+/* RESPONSIVE MENU*/
+
+@media screen and (max-width: 720px) {
+
+  .header-list-nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: rgb(43, 35, 35);
+    width: 250px;
+    height: 100vh;
+    padding: 40px;
+    z-index: 1;
+    transition: all 300ms;
+  }
+
+  .header-list-nav ul {
+    flex-direction: column;
+    margin-top: 40px;
+    
+  }
+  .header-list-nav ul li {
+    margin-top: 30px;
+    margin-left: 0;
+   
+  }
+  .header-list-nav ul a {
+    color: #ffffff;
+    font-size: 25px;
+  }  
+  .header-list img {
+    display: block;
+    width: 95px;
+    margin: 0 auto;
+  } 
+  #back_menu{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+  } 
+  .header-list #btn_menu{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(225, 255, 255, 0.1);
+    font-size: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 300ms;
+  } 
+  .header-list #btn_menu:hover{ 
+    background: #fc8798;
+  } 
+
+}
+
+/* RESPONSIVE HERO */
+
+/* Versión móvil */
+@media (max-width: 768px) {
+  #header {
+    padding: 20px; 
+  }
+  #hero {
+    padding: 0 20px; 
+  }
+}
+
+/* Versión tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #header {
+    padding: 20px 50px;
+  }
+  #hero {
+    padding: 0 50px;
+  }
+}
+
+/* TEXTOS RESPONSIVE */
+@media (max-width: 768px) {
+
+  #hero p {
+    font-size: 1.3rem;
+  }
+
+  #hero h2 {
+    font-size: 1.5rem; 
+  }
+
+  #hero h1 {
+    font-size: 4rem;
+  } 
+}
+
+
+/* SUCURSALES RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .ag-format-container {
+    padding: 20px;
+    width: 100%;
+    height: 260vh;
+  }
+
+  .ag-courses_item {
+    width: 100%;
+  }
+
+  .ag-courses-item_title {
+    font-size: 20px;    
+  }  
+
+  .ag-courses-item_link {  
+    padding: 15px;
+  }
+  
+}
+
+/* FLOOTER RESPONSIVE */
+
+/* Versión móvil */
+@media (max-width: 768px) {
+
+  #footer { 
+    flex-direction: column;
+  }
+  
+  #footer p {
+    padding: 5px;
+    font-size: 14px; 
+  }
+
+}
+
+/* Versión tablet y desktop */
+@media (min-width: 769px) {
+
+  #footer {
+    display: flex;
+    justify-content: space-between; 
+  }
+
+  #footer p {
+    padding: 10px;
+    font-size: 16px;
+  }
+
 }
 
