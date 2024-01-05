@@ -1,10 +1,2 @@
-Responsive para todos los dispositivos 
-
-Flooter de Index y menu
-
-
-
-
-Mandar solicitus en busca de vender el proyecto por un valor de 500 dolares
-Intentar hacer un hacercamiento para mantenimiento de la misma pagina
-
+JPG a SVG
+flooter Index

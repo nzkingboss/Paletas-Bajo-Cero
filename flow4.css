@@ -23,21 +23,14 @@ h4 {
   font-size: 20px;
   color: #222;
 }
-h6 {
-  font-weight: 700;
-  font-size: 12px;
-}
-p {
+
+
+.paladar {
   font-size: 16px;
   color: #465b52;
   margin: 15px 0 20px 0;
 }
-.section-p1 {
-  padding: 40px 0;
-}
-.section-m1 {
-  margin: 40px 0;
-}
+
 
 button.normal {
   font-size: 14px;
@@ -211,8 +204,6 @@ body {
 }
 
 
-
-
 /* Boton "ir" arriba */
 
 #goToTopBtn {
@@ -247,6 +238,7 @@ body {
   margin: 5px 0;
   padding: 15px;
   font-size: 20px;
+  line-height: 1.5;
   background-color: #088178;
 }
 
