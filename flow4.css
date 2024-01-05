@@ -80,10 +80,11 @@ body {
   list-style-type: none;
   padding: 0 20px;
   position: relative;
+  margin-left: 36px;
 }
 .header-list-nav ul a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: #1a1a1a;
   transition: 0.3s ease;
@@ -97,6 +98,12 @@ body {
   color: #1a1a1a;
   padding-left: 20px;
   transition: 0.3s ease;
+}
+.header-list img {
+  display: none;
+} 
+.header-list #btn_menu {
+  display: none;
 }
 .header-list-icon a:hover,
 .header-list-nav ul a.active {
@@ -194,13 +201,17 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 #off-banner h4 {
   color: #bf264a;
+  font-size: 25px;  
 }
 #off-banner h2 {
   color: #000000;
   padding: 20px 0;
+  font-size: 60px;
+  padding: 20px;
 }
 
 
@@ -250,4 +261,137 @@ body {
 p i {
   font-size: 20px;
   color: rgb(0, 0, 0);
+}
+
+
+/* RESPONSIVE MENU*/
+
+@media screen and (max-width: 720px) {
+
+  .header-list-nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: rgb(43, 35, 35);
+    width: 250px;
+    height: 100vh;
+    padding: 40px;
+    z-index: 1;
+    transition: all 300ms;
+  }
+
+  .header-list-nav ul {
+    flex-direction: column;
+    margin-top: 40px;
+    
+  }
+  .header-list-nav ul li {
+    margin-top: 30px;
+    margin-left: 0;
+   
+  }
+  .header-list-nav ul a {
+    color: #ffffff;
+    font-size: 25px;
+  }  
+  .header-list img {
+    display: block;
+    width: 95px;
+    margin: 0 auto;
+  } 
+  #back_menu{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+  } 
+  .header-list #btn_menu{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(225, 255, 255, 0.1);
+    font-size: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 300ms;
+  } 
+  .header-list #btn_menu:hover{ 
+    background: #fc8798;
+  } 
+
+}
+
+/* RESPONSIVE HERO */
+
+/* Versión móvil */
+@media (max-width: 768px) {
+  #header {
+    padding: 20px; 
+  }
+  #hero {
+    padding: 0 20px; 
+  }
+}
+
+/* Versión tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #header {
+    padding: 20px 50px;
+  }
+  #hero {
+    padding: 0 50px;
+  }
+}
+
+/* RESPONSIVE OFF BANNER */
+@media (max-width: 768px) {
+  #off-banner { 
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  #off-banner h4 {
+    font-size: 18px;
+  }
+  
+  #off-banner h2 {
+    font-size: 36px;
+    padding: 10px;
+  }
+}
+
+/* FLOOTER RESPONSIVE */
+
+/* Versión móvil */
+@media (max-width: 768px) {
+
+  #footer { 
+    flex-direction: column;
+  }
+  
+  #footer p {
+    padding: 5px;
+    font-size: 14px; 
+  }
+
+}
+
+/* Versión tablet y desktop */
+@media (min-width: 769px) {
+
+  #footer {
+    display: flex;
+    justify-content: space-between; 
+  }
+
+  #footer p {
+    padding: 10px;
+    font-size: 16px;
+  }
+
 }
