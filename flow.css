@@ -625,11 +625,6 @@ p i {
   #footer { 
     flex-direction: column;
   }
-  
-  #footer p {
-    padding: 5px;
-    font-size: 14px; 
-  }
 
 }
 
@@ -639,11 +634,6 @@ p i {
   #footer {
     display: flex;
     justify-content: space-between; 
-  }
-
-  #footer p {
-    padding: 10px;
-    font-size: 16px;
   }
 
 }
