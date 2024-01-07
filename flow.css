@@ -407,26 +407,66 @@ body {
 
 /* footer section styles */
 
-#footer{
+/* General */
+
+#footer {
+  background-color: #088178;
   display: flex;
+  font-size: 20px;
+  line-height: 0.5;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   margin: 5px 0;
   padding: 15px;
-  font-size: 20px;
-  line-height: 1.5;
-  background-color: #088178;
 }
 
-#footer p, #footer a{
-  color: white;
-  text-decoration: none;
-} 
+/* Ubicacion y Telefono */
+#footer p {
+  margin: 10px 0;
+  color: #ffffff;
+}
 
-p i {
+#footer p.copyright {
+  margin: 10px 0;
+  color: #000000;
+}
+
+/* redes sociales */
+#social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#social-media p {
+  margin: 0; 
+  color: #ffcc00;
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  padding: 5px;
+}
+
+#social-media a {
+  margin: 5px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* powered */
+#footer a[target="_blank"] {
+  color: #00eeff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* íconos */
+.fa-brands {
+  margin-right: 5px;
+}
+
+#footer {
+  position: relative;
 }
 
 
