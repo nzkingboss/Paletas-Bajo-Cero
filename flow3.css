@@ -362,6 +362,16 @@ p i {
 }
 
 
+
+/* HERO AFTER RESPONSIVE  */
+
+@media (max-width: 767px) {
+  #hero::after {
+    display: none; 
+  }
+}
+
+
 /* FLOOTER RESPONSIVE */
 
 /* Versión móvil */
